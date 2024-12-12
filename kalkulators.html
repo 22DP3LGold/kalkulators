@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head lang='en'>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/kalkulators.css" />
+      <title> Kalkulators</title>
+   </head>
+
+   <body>
+      <div class='top'>
+         <h2> Kalkulators </h2>
+         <p>Kruķītākais kalkulators KK</p>
+      </div>
+      <div class='kalkulators'>
+         <input type='text' id='display' readonly>
+         <div class='pogas'>
+            <button onclick="paradit('1')">1</button>
+            <button onclick="paradit('2')">2</button>
+            <button onclick="paradit('3')">3</button>
+            <button onclick="paradit('+')">+</button>
+            <button onclick="paradit('4')">4</button>
+            <button onclick="paradit('5')">5</button>
+            <button onclick="paradit('6')">6</button>
+            <button onclick="paradit('-')">-</button>
+            <button onclick="paradit('7')">7</button>
+            <button onclick="paradit('8')">8</button>
+            <button onclick="paradit('9')">9</button>
+            <button onclick="paradit('*')">*</button>
+            <button onclick="notirit()">CA</button>
+            <button onclick="paradit('0')">0</button>
+            <button onclick="aprekinat()" >=</button>
+            <button onclick="paradit('/')">/</button>
+         </div>
+            <button onclick="vesture()" id="vesture">Vēsture</button>
+      </div>
+      <div id="vestureBox">
+         <button onclick="dzestVesturi()" id="dzestVesturi">Dzēst vēsturi</button>
+         <div id="vestureTeksts"></div>
+      </div>
+   </body>
+   <script src="/kalkulators.js"></script>
+</html>
